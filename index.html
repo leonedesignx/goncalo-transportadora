@@ -14,7 +14,7 @@
 <body>
 <header class="header" id="top">
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="assets/logo-wordmark-white.webp" alt="Gonçalo Transportadora"></a>
+    <a class="brand" href="#top" aria-label="Gonçalo Transportadora — início"><span class="brand-lockup"><img class="brand-symbol" src="assets/logo-symbol-white-small.webp" alt=""><img class="brand-wordmark" src="assets/logo-wordmark-white.webp" alt="Gonçalo Transportadora"></span></a>
     <button class="menu" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="links">
       <a href="#servicos">Serviços</a><a href="#veiculos">Veículos</a><a href="#processo">Como funciona</a><a href="#sobre">Sobre</a>
@@ -25,9 +25,12 @@
 
 <main>
 <section class="hero">
-  <div class="hero-glow"></div>
+  <div class="hero-media" aria-hidden="true"><img src="assets/hero-truck.webp" alt=""></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-lines" aria-hidden="true"><span></span><span></span><span></span></div>
   <div class="wrap hero-grid">
     <div class="hero-copy reveal">
+      <div class="hero-brand-chip"><img src="assets/logo-symbol-white-small.webp" alt=""><span>GONÇALO TRANSPORTADORA</span></div>
       <p class="eyebrow">TRANSPORTE DE CARGAS NO NORDESTE</p>
       <h1>Sua carga no caminho certo, <em>do início ao destino.</em></h1>
       <p class="lead">Atendimento para <strong>empresas e pessoas físicas em todo o Nordeste</strong>, com maior atuação em Pernambuco. Transporte de cargas, coleta no endereço e operações interestaduais com comunicação próxima em cada etapa.</p>
@@ -37,12 +40,27 @@
       </div>
       <div class="quick"><span><i data-lucide="clock-3" aria-hidden="true"></i>08h às 18h</span><span><i data-lucide="map-pin" aria-hidden="true"></i>Coleta no endereço</span><span><i data-lucide="messages-square" aria-hidden="true"></i>Acompanhamento pela equipe</span></div>
     </div>
-    <div class="hero-image reveal">
-      <img src="assets/hero-truck.webp" alt="Caminhão em rodovia">
-      <div class="hero-card"><small>EXPERIÊNCIA EM MOVIMENTO</small><strong>+400 entregas realizadas em 3 anos de atuação.</strong></div>
-    </div>
+    <aside class="hero-panel reveal reveal-delay-1">
+      <div class="hero-panel-top">
+        <img src="assets/logo-symbol-white-small.webp" alt="" aria-hidden="true">
+        <div><small>OPERAÇÃO EM MOVIMENTO</small><strong>Logística com presença, comunicação e resposta.</strong></div>
+      </div>
+      <div class="hero-panel-grid">
+        <div><strong data-counter="400" data-prefix="+">+400</strong><span>entregas realizadas</span></div>
+        <div><strong data-counter="3">3</strong><span>anos de atuação</span></div>
+        <div class="wide"><strong>Nordeste</strong><span>maior presença em Pernambuco</span></div>
+      </div>
+      <a href="#processo" class="hero-panel-link">Entenda como funciona <span>↘</span></a>
+    </aside>
   </div>
 </section>
+
+<div class="motion-strip" aria-hidden="true">
+  <div class="motion-track">
+    <span>TRANSPORTE DE CARGAS</span><i>•</i><span>COLETA NO ENDEREÇO</span><i>•</i><span>OPERAÇÕES RECORRENTES</span><i>•</i><span>NORDESTE</span><i>•</i>
+    <span>TRANSPORTE DE CARGAS</span><i>•</i><span>COLETA NO ENDEREÇO</span><i>•</i><span>OPERAÇÕES RECORRENTES</span><i>•</i><span>NORDESTE</span><i>•</i>
+  </div>
+</div>
 
 <section class="stats">
   <div class="wrap stats-grid">
@@ -66,6 +84,7 @@
 </section>
 
 <section class="band">
+  <div class="band-photo" aria-hidden="true"><img src="assets/warehouse.webp" alt=""></div>
   <div class="wrap band-grid reveal">
     <div><p class="eyebrow">PARA COTAR MAIS RÁPIDO</p><h2>Envie o que realmente define a operação.</h2><p>A equipe consulta motoristas disponíveis e identifica o veículo adequado antes de retornar com o orçamento.</p></div>
     <div class="checkgrid"><span>Origem / coleta</span><span>Destino / entrega</span><span>Tipo de carga</span><span>Peso e dimensões</span><span>Quantidade de volumes</span><span>Prazo desejado</span></div>
@@ -117,7 +136,13 @@
 
 <section class="section" id="sobre">
   <div class="wrap about">
-    <div class="about-side reveal"><img class="about-logo about-logo-red" src="assets/logo-wordmark-white.webp" alt="Gonçalo Transportadora"><div class="big-number"><strong>+400</strong><span>entregas realizadas</span></div></div>
+    <div class="about-side reveal">
+  <div class="about-lockup">
+    <img class="about-symbol" src="assets/logo-symbol-white-small.webp" alt="">
+    <img class="about-wordmark" src="assets/logo-wordmark-white.webp" alt="Gonçalo Transportadora">
+  </div>
+  <div class="big-number"><strong>+400</strong><span>entregas realizadas</span></div>
+</div>
     <div class="copy reveal"><p class="eyebrow dark">SOBRE A GONÇALO</p><h2>Três anos conectando demandas a <em>soluções de transporte.</em></h2><p>A Gonçalo Transportadora atende empresas e pessoas físicas em todo o Nordeste, com maior campo de atuação em Pernambuco. A operação é estruturada a partir da necessidade de cada cliente.</p><p>Mais do que movimentar materiais, a proposta é manter o cliente informado, facilitar a comunicação e prestar suporte quando houver qualquer imprevisto.</p><div class="tags"><span>Materiais de construção</span><span>Equipamentos</span><span>Outras cargas sob análise</span></div></div>
   </div>
 </section>
@@ -164,7 +189,7 @@
 
 <footer>
   <div class="wrap footer-grid">
-    <div><img class="footer-logo" src="assets/logo-wordmark-white.webp" alt="Gonçalo Transportadora"><p>Movemos o presente, para acelerar o seu futuro.</p></div>
+    <div class="footer-brand-block"><div class="footer-lockup"><img class="footer-symbol" src="assets/logo-symbol-white-small.webp" alt=""><img class="footer-logo" src="assets/logo-wordmark-white.webp" alt="Gonçalo Transportadora"></div><p>Movemos o presente, para acelerar o seu futuro.</p></div>
     <div><strong>Contato</strong><a class="footer-contact js-whatsapp" href="#" target="_blank"><img class="brand-icon brand-icon-footer" src="https://api.iconify.design/logos/whatsapp-icon.svg" alt="" aria-hidden="true"><span class="js-phone"></span></a><a class="footer-contact js-email" href="#"><i data-lucide="mail" aria-hidden="true"></i><span class="js-email-text"></span></a><a class="footer-contact" href="https://www.instagram.com/goncalotransportadora" target="_blank"><img class="brand-icon brand-icon-footer" src="https://api.iconify.design/skill-icons/instagram.svg" alt="" aria-hidden="true">@goncalotransportadora</a></div>
     <div><strong>Navegação</strong><a href="#servicos">Serviços</a><a href="#veiculos">Veículos</a><a href="#processo">Como funciona</a><a href="#sobre">Sobre</a></div>
   </div>
