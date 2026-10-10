@@ -30,3 +30,14 @@
   .contact-list strong{max-width:58%}
   .faq article{grid-template-columns:auto 1fr}
 }
+/* Official social brand icons */
+.brand-icon{display:block;width:20px;height:20px;object-fit:contain;flex:0 0 auto}
+.brand-icon-btn{width:19px;height:19px}
+.brand-icon-footer{width:16px;height:16px}
+.brand-icon-float{width:30px;height:30px}
+.contact-label .brand-icon{transition:transform .2s ease}
+.contact-list a:hover .brand-icon{transform:scale(1.08)}
+.footer-contact .brand-icon{transition:transform .2s ease}
+.footer-contact:hover .brand-icon{transform:scale(1.08)}
+.float{background:#25D366}
+.float:hover{background:#20bd5a}
