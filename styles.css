@@ -42,3 +42,8 @@
 .float{background:#25D366}
 .float:hover{background:#20bd5a}
 .about-side{display:flex;flex-direction:column;gap:28px}.about-logo{width:175px;height:auto;object-fit:contain}.about-side .big-number{margin-top:4px}@media(max-width:640px){.about-logo{width:140px}}
+/* Reliable Gonçalo logo rendering */
+.brand img,.footer-logo,.about-logo{display:block}
+.about-logo-red{
+  filter: brightness(0) saturate(100%) invert(10%) sepia(97%) saturate(6790%) hue-rotate(1deg) brightness(79%) contrast(109%);
+}
