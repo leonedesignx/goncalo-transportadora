@@ -208,3 +208,78 @@ footer{border-top:1px solid rgba(229,42,37,.15)}
 .visual-card figcaption span{max-width:420px;font-size:.75rem;line-height:1.5;color:rgba(255,255,255,.7)}
 @media(max-width:980px){.visual-grid{grid-template-columns:1fr 1fr;grid-template-rows:380px 280px}.visual-card.visual-main{grid-column:1/3;grid-row:auto}.hero-panel-visual{height:230px}}
 @media(max-width:640px){.hero-panel-visual{margin:-19px -19px 18px;height:190px}.visual-grid{grid-template-columns:1fr;grid-template-rows:none}.visual-card,.visual-card.visual-main{grid-column:auto;grid-row:auto;height:250px}.visual-card.visual-main{height:320px}}
+
+/* Photos coming soon — premium placeholder */
+.visual-showcase .head{margin-bottom:34px}
+.visual-grid{display:none!important}
+.photos-soon{
+  position:relative;
+  min-height:470px;
+  overflow:hidden;
+  border-radius:30px;
+  background:#161212;
+  box-shadow:0 24px 64px rgba(33,12,12,.12);
+  border:1px solid rgba(23,21,21,.06);
+}
+.photos-soon>img{
+  position:absolute;
+  inset:-20px;
+  width:calc(100% + 40px);
+  height:calc(100% + 40px);
+  object-fit:cover;
+  object-position:center 48%;
+  filter:blur(10px) saturate(.68) brightness(.72);
+  transform:scale(1.035);
+}
+.photos-soon-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,rgba(17,13,13,.18),rgba(17,13,13,.58)),
+    radial-gradient(circle at 50% 45%,rgba(154,2,1,.16),transparent 46%);
+}
+.photos-soon-content{
+  position:relative;
+  z-index:2;
+  min-height:470px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  padding:48px 24px;
+}
+.photos-soon-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:18px;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  font-size:.67rem;
+  font-weight:900;
+  letter-spacing:.16em;
+  color:#ffb7b3;
+}
+.photos-soon-content h3{
+  margin:0 0 12px;
+  font-size:clamp(2.2rem,5vw,4.4rem);
+  line-height:.96;
+  letter-spacing:-.05em;
+}
+.photos-soon-content p{
+  max-width:650px;
+  margin:0;
+  color:rgba(255,255,255,.74);
+  line-height:1.75;
+  font-size:.94rem;
+}
+@media(max-width:640px){
+  .photos-soon,.photos-soon-content{min-height:360px}
+  .photos-soon-content{padding:34px 18px}
+  .photos-soon-content h3{font-size:2.6rem}
+}
